@@ -10,9 +10,9 @@
 <body>
   <!-- Q1 -->
   <section>
-    <h3>Q1)ログアウトしたい場合、ターミナルで何と入力すれば良いか</h3>
+    <h3>Q1) ログアウトしたい場合、ターミナルで何と入力すれば良いか</h3>
     <h4 id="temporaryBox" class="temporaryBox">
-      <pre class="prettyprint lang-sql linenums" id="js-target">
+      <pre class="lang-sql linenums" id="js-target">
         正解は、
         exit or quit
 
@@ -238,9 +238,9 @@
 
   <!-- Q2 -->
   <section>
-    <h3>Q2)一番上の階層（ルートディレクトリ）にいきたい場合、何と入力すれば良いか</h3>
+    <h3>Q2) 一番上の階層（ルートディレクトリ）にいきたい場合、何と入力すれば良いか</h3>
     <h4 id="temporaryBox2" class="temporaryBox">
-      <pre class="prettyprint lang-sql linenums" id="js-target2">
+      <pre class="lang-sql linenums" id="js-target2">
         正解は、
         cd \
 
@@ -258,22 +258,124 @@
 
   <!-- Q3 -->
   <section>
-    <h3>Q3)cドライブからeドライブに変更したい場合、何と入力すれば良いか</h3>
+    <h3>Q3) cドライブからeドライブに変更したい場合、何と入力すれば良いか</h3>
     <h4 id="temporaryBox3" class="temporaryBox">
-      <pre class="prettyprint lang-sql linenums" id="js-target3">
+      <pre class="lang-sql linenums" id="js-target3">
         正解は、
         cd /d e:\
 
 
 
-        /* 戻りたいとき */
-        cd /d c:\xampp\mysql\bin
+        オプション /d
+        ドライブを変更する
 
+        戻りたいとき
+        cd /d c:\xampp\mysql\bin
         c:\>
       </pre>
     </h4>
     <p>
       <input type="button" value="答えを見る" id="btnShowBox3" class="btn" onclick="showBox3();">
+    </p>
+  </section>
+
+  <!-- Q4 -->
+  <section>
+    <h3>Q4) テーブルの構造を確認したい場合、何と入力すれば良いか</h3>
+    <h4 id="temporaryBox4" class="temporaryBox">
+      <pre class="lang-sql linenums" id="js-target4">
+        正解は、
+        desc テーブル名;
+
+
+
+        具体例
+        MariaDB [db1]> desc tb1;
+        +-------+-------------+------+-----+---------+-------+
+        | Field | Type        | Null | Key | Default | Extra |
+        +-------+-------------+------+-----+---------+-------+
+        | bang  | varchar(10) | YES  |     | NULL    |       |
+        | nama  | varchar(10) | YES  |     | NULL    |       |
+        | tosi  | int(11)     | YES  |     | NULL    |       |
+        +-------+-------------+------+-----+---------+-------+
+        3 rows in set (0.157 sec)
+      </pre>
+    </h4>
+    <p>
+      <input type="button" value="答えを見る" id="btnShowBox4" class="btn" onclick="showBox4();">
+    </p>
+  </section>
+
+  <!-- Q5 -->
+  <section>
+    <h3>Q5) テーブルから全てのカラムを表示させたい（データを抽出したい）場合、<br>何と入力すれば良いか</h3>
+    <h4 id="temporaryBox5" class="temporaryBox">
+      <pre class="lang-sql linenums" id="js-target5">
+        正解は、
+        select * from テーブル名;
+
+
+
+        具体例
+        MariaDB [db1]> select * from tb1;
+        +------+------+------+
+        | bang | nama | tosi |
+        +------+------+------+
+        | A101 | ç≤ì° |   40 |
+        +------+------+------+
+        1 row in set (0.000 sec)
+      </pre>
+    </h4>
+    <p>
+      <input type="button" value="答えを見る" id="btnShowBox5" class="btn" onclick="showBox5();">
+    </p>
+  </section>
+
+  <!-- Q6 -->
+  <section>
+    <h3>Q6) 今の階層から階層を一つ上がりたい場合、<br>何と入力すれば良いか</h3>
+    <h4 id="temporaryBox6" class="temporaryBox">
+      <pre class="lang-sql linenums" id="js-target6">
+        正解は、
+        cd ..
+
+
+
+        具体例
+        c:\xampp\mysql\bin>cd ..
+        c:\xampp\mysql>
+      </pre>
+    </h4>
+    <p>
+      <input type="button" value="答えを見る" id="btnShowBox6" class="btn" onclick="showBox6();">
+    </p>
+  </section>
+
+  <!-- Q7 -->
+  <section>
+    <h3>Q7) データとは何か</h3>
+    <h4 id="temporaryBox7" class="temporaryBox">
+      <pre class="lang-sql linenums" id="js-target7">
+        正解は、
+        データとは、客観的事実を数値・文字・図形・画像・音声などで表したもの
+      </pre>
+    </h4>
+    <p>
+      <input type="button" value="答えを見る" id="btnShowBox7" class="btn" onclick="showBox7();">
+    </p>
+  </section>
+
+  <!-- Q8 -->
+  <section>
+    <h3>Q8) 情報とは何か</h3>
+    <h4 id="temporaryBox8" class="temporaryBox">
+      <pre class="lang-sql linenums" id="js-target8">
+        正解は、
+        情報とは、主観的事実
+      </pre>
+    </h4>
+    <p>
+      <input type="button" value="答えを見る" id="btnShowBox8" class="btn" onclick="showBox8();">
     </p>
   </section>
 
