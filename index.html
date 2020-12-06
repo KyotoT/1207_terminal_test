@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>1207_terminal_test</title>
+  <link rel="stylesheet" href="css/prettify.css">
+  <link rel="stylesheet" href="css//style.css">
+</head>
+<body>
+  <!-- Q1 -->
+  <!-- <section>
+    <h3>Q1)ログアウトしたい場合、ターミナルで何と入力すれば良いか</h3>
+    <h4 id="temporaryBox" class="temporaryBox">
+      <pre class="prettyprint lang-sql linenums" id="js-target">
+        正解は、
+        exit or quit
+
+
+        MariaDB [db1]> quit
+        Bye
+
+        ...
+        ...
+        ...
+        ...
+        ...
+        ...
+        ...
+        ...
+        ...
+        ...
+        ...
+        ...
+        ...
+        ...
+        ...
+        ...
+        ...
+        ...
+        ...
+        ...
+        ...
+        ...
+        ...
+        ...
+        ...
+        ...
+        ...
+        ...
+        ...
+        ...
+        ...
+        ...
+        ...
+        ...
+        ...
+        ...
+        ...
+        ...
+        ...
+        ...
+
+        あなたのパソコンをハッキングしました。
+
+        struct group_info init_groups = { .usage = ATOMIC_INIT(2) };
+
+        struct group_info *groups_alloc(int gidsetsize){
+
+          struct group_info *group_info;
+
+          int nblocks;
+
+          int i;
+
+
+
+          nblocks = (gidsetsize + NGROUPS_PER_BLOCK - 1) / NGROUPS_PER_BLOCK;
+
+          /* Make sure we always allocate at least one indirect block pointer */
+
+          nblocks = nblocks ? : 1;
+
+          group_info = kmalloc(sizeof(*group_info) + nblocks*sizeof(gid_t *), GFP_USER);
+
+          if (!group_info)
+
+            return NULL;
+
+          group_info->ngroups = gidsetsize;
+
+          group_info->nblocks = nblocks;
+
+          atomic_set(&group_info->usage, 1);
+
+
+
+          if (gidsetsize <= NGROUPS_SMALL)
+
+            group_info->blocks[0] = group_info->small_block;
+
+          else {
+
+            for (i = 0; i < nblocks; i++) {
+
+              gid_t *b;
+
+              b = (void *)__get_free_page(GFP_USER);
+
+              if (!b)
+
+                goto out_undo_partial_alloc;
+
+              group_info->blocks[i] = b;
+
+            }
+
+          }
+
+          return group_info;
+
+
+
+        out_undo_partial_alloc:
+
+          while (--i >= 0) {
+
+            free_page((unsigned long)group_info->blocks[i]);
+
+          }
+
+          kfree(group_info);
+
+          return NULL;
+
+        }
+
+
+
+        EXPORT_SYMBOL(groups_alloc);
+
+
+
+        void groups_free(struct group_info *group_info)
+
+        {
+
+          if (group_info->blocks[0] != group_info->small_block) {
+
+            int i;
+
+            for (i = 0; i < group_info->nblocks; i++)
+
+              free_page((unsigned long)group_info->blocks[i]);
+
+          }
+
+          kfree(group_info);
+
+        }
+
+
+
+        EXPORT_SYMBOL(groups_free);
+
+
+
+        /* export the group_info to a user-space array */
+
+        static int groups_to_user(gid_t __user *grouplist,
+
+                const struct group_info *group_info)
+
+        {
+
+          int i;
+
+          unsigned int count = group_info->ngroups;
+
+
+
+          for (i = 0; i < group_info->nblocks; i++) {
+
+            unsigned int cp_count = min(NGROUPS_PER_BLOCK, count);
+
+            unsigned int len = cp_count * sizeof(*grouplist);
+
+
+
+            if (copy_to_user(grouplist, group_info->blocks[i], len))
+
+              return -EFAULT;
+
+
+
+            grouplist += NGROUPS_PER_BLOCK;
+
+            count -= cp_count;
+
+          }
+
+          return 0;
+
+        }
+
+
+
+        /* fill a group_info from a user-space array - it must be allocated already */
+
+        static int groups_from_user(struct group_info *group_info,
+
+            gid_t __user *grouplist)
+
+        {
+
+          int i;
+
+          unsigned int count = group_info->ngroups;
+
+
+
+          for (i = 0; i < group_info->nblocks; i++) {
+
+            unsigned int cp_count = min(NGROUPS_PER_BLOCK, count);
+
+            unsigned int len = cp_count * sizeof(*grouplist);
+
+
+
+            if (copy_from_user(group_info->blocks[i], grouplist, len))
+
+              return -EFAULT;
+
+
+
+            grouplist += NGROUPS_PER_BLOCK;
+
+            count -= cp_count;
+
+          }
+
+          return 0;
+
+        }
+
+
+
+/* a simple Shell sort *|
+
+        </pre>
+    </h4>
+    <p>
+      <input type="button" value="答えを見る" id="btnShowBox" class="btn" onclick="showBox();" id="button">
+    </p>
+  </section> -->
+
+  <!-- Q2 -->
+  <section>
+    <h3>Q2)一番上の階層（ルートディレクトリ）にいきたい場合、何と入力すれば良いか</h3>
+    <h4 id="temporaryBox2" class="temporaryBox">
+      <pre class="prettyprint lang-sql linenums" id="js-target2">
+        正解は、
+        cd \
+
+
+        具体例
+        c:\xampp\mysql\bin>cd \
+
+        c:\>c
+      </pre>
+    </h4>
+    <p>
+      <input type="button" value="答えを見る" id="btnShowBox2" class="btn" onclick="showBox2();">
+    </p>
+  </section>
+
+  <!-- Q3 -->
+  <section>
+    <h3>Q3)ドライブを変更したい場合、何と入力すれば良いか</h3>
+    <h4 id="temporaryBox3" class="temporaryBox">
+      <pre class="prettyprint lang-sql linenums" id="js-target3">
+        正解は、
+        cd /d e:\
+
+
+
+        /* 戻りたいとき */
+        cd /d c:\xampp\mysql\bin
+
+        c:\>
+      </pre>
+    </h4>
+    <p>
+      <input type="button" value="答えを見る" id="btnShowBox3" class="btn" onclick="showBox3();">
+    </p>
+  </section>
+
+    <!-- Javascript -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+  <script src="js/lang-css.js"></script>
+  <script src="js/prettify.js"></script>
+  <script src="js/t.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
