@@ -264,7 +264,7 @@ $(function(){
 // Q14
 function showBox14() {
   document.getElementById("temporaryBox14").style.display = "block";
-  timerId13 =setTimeout(closeBox14, 5000 );
+  timerId14 =setTimeout(closeBox14, 5000 );
   document.getElementById("btnShowBox14").disabled = true;
 }
 function closeBox14() {
@@ -275,6 +275,132 @@ function closeBox14() {
 
 $(function(){
   $('#js-target14').t({
+    speed_vary:true,
+  });
+});
+
+// Q15
+function showBox15() {
+  document.getElementById("temporaryBox15").style.display = "block";
+  timerId15 =setTimeout(closeBox15, 5000 );
+  document.getElementById("btnShowBox15").disabled = true;
+}
+function closeBox15() {
+  document.getElementById("temporaryBox15").style.display = "none";
+  clearTimeout(timerId15);
+  document.getElementById("btnShowBox15").disabled = false;
+}
+
+$(function(){
+  $('#js-target15').t({
+    speed_vary:true,
+  });
+});
+
+// Q16
+function showBox16() {
+  document.getElementById("temporaryBox16").style.display = "block";
+  timerId16 =setTimeout(closeBox16, 5000 );
+  document.getElementById("btnShowBox16").disabled = true;
+}
+function closeBox16() {
+  document.getElementById("temporaryBox16").style.display = "none";
+  clearTimeout(timerId16);
+  document.getElementById("btnShowBox16").disabled = false;
+}
+
+$(function(){
+  $('#js-target16').t({
+    speed_vary:true,
+  });
+});
+
+// Q17
+function showBox17() {
+  document.getElementById("temporaryBox17").style.display = "block";
+  timerId17 =setTimeout(closeBox17, 5000 );
+  document.getElementById("btnShowBox17").disabled = true;
+}
+function closeBox17() {
+  document.getElementById("temporaryBox17").style.display = "none";
+  clearTimeout(timerId17);
+  document.getElementById("btnShowBox17").disabled = false;
+}
+
+$(function(){
+  $('#js-target17').t({
+    speed_vary:true,
+  });
+});
+
+// Q18
+function showBox18() {
+  document.getElementById("temporaryBox18").style.display = "block";
+  timerId18 =setTimeout(closeBox18, 5000 );
+  document.getElementById("btnShowBox18").disabled = true;
+}
+function closeBox18() {
+  document.getElementById("temporaryBox18").style.display = "none";
+  clearTimeout(timerId18);
+  document.getElementById("btnShowBox18").disabled = false;
+}
+
+$(function(){
+  $('#js-target18').t({
+    speed_vary:true,
+  });
+});
+
+// Q19
+function showBox19() {
+  document.getElementById("temporaryBox19").style.display = "block";
+  timerId19 =setTimeout(closeBox19, 5000 );
+  document.getElementById("btnShowBox19").disabled = true;
+}
+function closeBox19() {
+  document.getElementById("temporaryBox19").style.display = "none";
+  clearTimeout(timerId19);
+  document.getElementById("btnShowBox19").disabled = false;
+}
+
+$(function(){
+  $('#js-target19').t({
+    speed_vary:true,
+  });
+});
+
+// Q20
+function showBox20() {
+  document.getElementById("temporaryBox20").style.display = "block";
+  timerId20 =setTimeout(closeBox20, 5000 );
+  document.getElementById("btnShowBox20").disabled = true;
+}
+function closeBox20() {
+  document.getElementById("temporaryBox20").style.display = "none";
+  clearTimeout(timerId20);
+  document.getElementById("btnShowBox20").disabled = false;
+}
+
+$(function(){
+  $('#js-target20').t({
+    speed_vary:true,
+  });
+});
+
+// Q21
+function showBox21() {
+  document.getElementById("temporaryBox21").style.display = "block";
+  timerId21 =setTimeout(closeBox21, 5000 );
+  document.getElementById("btnShowBox21").disabled = true;
+}
+function closeBox21() {
+  document.getElementById("temporaryBox21").style.display = "none";
+  clearTimeout(timerId21);
+  document.getElementById("btnShowBox21").disabled = false;
+}
+
+$(function(){
+  $('#js-target21').t({
     speed_vary:true,
   });
 });

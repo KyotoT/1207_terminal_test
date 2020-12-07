@@ -467,6 +467,184 @@
       <input type="button" value="答えを見る" id="btnShowBox14" class="btn" onclick="showBox14();">
     </p>
   </section>
+    
+    <!-- Q15 -->
+  <section>
+    <h3>Q15) データベースを作成したい場合、<br>何と入力すれば良いか</h3>
+    <h4 id="temporaryBox15" class="temporaryBox">
+      <pre class="lang-sql linenums" id="js-target15">
+        正解は、
+        create database データベース名;
+
+
+
+        具体例
+        MariaDB [(none)]> create database db1;
+        Query OK, 1 row affected (0.008 sec)
+
+        MariaDB [(none)]> show databases;
+        +--------------------+
+        | Database           |
+        +--------------------+
+        | db1                |
+        | db_wp              |
+        | information_schema |
+        | mysql              |
+        | performance_schema |
+        | phpmyadmin         |
+        | test               |
+        +--------------------+
+        7 rows in set (0.124 sec)
+      </pre>
+    </h4>
+    <p>
+      <input type="button" value="答えを見る" id="btnShowBox15" class="btn" onclick="showBox15();">
+    </p>
+  </section>
+
+  <!-- Q16 -->
+  <section>
+    <h3>Q16) データベースの一覧表示をしたい場合、<br>何と入力すれば良いか</h3>
+    <h4 id="temporaryBox16" class="temporaryBox">
+      <pre class="lang-sql linenums" id="js-target16">
+        正解は、
+        show databases;
+
+
+
+        具体例
+        MariaDB [(none)]> show databases;
+        +--------------------+
+        | Database           |
+        +--------------------+
+        | db1                |
+        | db_wp              |
+        | information_schema |
+        | mysql              |
+        | performance_schema |
+        | phpmyadmin         |
+        | test               |
+        +--------------------+
+        7 rows in set (0.001 sec)
+      </pre>
+    </h4>
+    <p>
+      <input type="button" value="答えを見る" id="btnShowBox16" class="btn" onclick="showBox16();">
+    </p>
+  </section>
+
+  <!-- Q17 -->
+  <section>
+    <h3>Q17) データベースを削除したい場合、<br>何と入力すれば良いか</h3>
+    <h4 id="temporaryBox17" class="temporaryBox">
+      <pre class="lang-sql linenums" id="js-target17">
+        正解は、
+        drop database データベース名;
+
+
+
+        具体例
+        MariaDB [(none)]> drop database db1;
+        Query OK, 0 rows affected (0.150 sec)
+
+        MariaDB [(none)]> show databases;
+        +--------------------+
+        | Database           |
+        +--------------------+
+        | db_wp              |
+        | information_schema |
+        | mysql              |
+        | performance_schema |
+        | phpmyadmin         |
+        | test               |
+        +--------------------+
+        6 rows in set (0.001 sec)
+      </pre>
+    </h4>
+    <p>
+      <input type="button" value="答えを見る" id="btnShowBox17" class="btn" onclick="showBox17();">
+    </p>
+  </section>
+
+  <!-- Q18 -->
+  <section>
+    <h3>Q18) データベースを指定したい場合、<br>何と入力すれば良いか</h3>
+    <h4 id="temporaryBox18" class="temporaryBox">
+      <pre class="lang-sql linenums" id="js-target18">
+        正解は、
+        use データベース名;
+
+
+
+        具体例
+        MariaDB [(none)]> use db1;
+        Database changed
+      </pre>
+    </h4>
+    <p>
+      <input type="button" value="答えを見る" id="btnShowBox18" class="btn" onclick="showBox18();">
+    </p>
+  </section>
+
+  <!-- Q19 -->
+  <section>
+    <h3>Q19) 使用しているデータベースを確認したい場合、<br>何と入力すれば良いか</h3>
+    <h4 id="temporaryBox19" class="temporaryBox">
+      <pre class="lang-sql linenums" id="js-target19">
+        正解は、
+        select データベース名;
+
+
+
+        具体例
+        MariaDB [db1]> select database();
+        +------------+
+        | database() |
+        +------------+
+        | db1        |
+        +------------+
+        1 row in set (0.000 sec)
+      </pre>
+    </h4>
+    <p>
+      <input type="button" value="答えを見る" id="btnShowBox19" class="btn" onclick="showBox19();">
+    </p>
+  </section>
+
+  <!-- Q20 -->
+  <section>
+    <h3>Q20) テーブルを作成したい場合、<br>何と入力すれば良いか</h3>
+    <h4 id="temporaryBox20" class="temporaryBox">
+      <pre class="lang-sql linenums" id="js-target20">
+        正解は、
+        create table テーブル名（カラム名1 データ型1、カラム名2・・・）
+
+
+
+
+        具体例
+        create table tb1(bang varchar(10),nama varchar(10),tosi int);
+      （社員番号（10文字）、名前（10文字）、年齢（整数））
+      </pre>
+    </h4>
+    <p>
+      <input type="button" value="答えを見る" id="btnShowBox20" class="btn" onclick="showBox20();">
+    </p>
+  </section>
+
+  <!-- Q21 -->
+  <section>
+    <h3>Q21) descとは、何の略か</h3>
+    <h4 id="temporaryBox21" class="temporaryBox">
+      <pre class="lang-sql linenums" id="js-target21">
+        正解は、
+        describe
+      </pre>
+    </h4>
+    <p>
+      <input type="button" value="答えを見る" id="btnShowBox21" class="btn" onclick="showBox21();">
+    </p>
+  </section>
 
     <!-- Javascript -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
