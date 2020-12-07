@@ -404,3 +404,93 @@ $(function(){
     speed_vary:true,
   });
 });
+
+// Q22
+function showBox22() {
+  document.getElementById("temporaryBox22").style.display = "block";
+  timerId22 =setTimeout(closeBox22, 5000 );
+  document.getElementById("btnShowBox22").disabled = true;
+}
+function closeBox22() {
+  document.getElementById("temporaryBox22").style.display = "none";
+  clearTimeout(timerId22);
+  document.getElementById("btnShowBox22").disabled = false;
+}
+
+$(function(){
+  $('#js-target22').t({
+    speed_vary:true,
+  });
+});
+
+// Q23
+function showBox23() {
+  document.getElementById("temporaryBox23").style.display = "block";
+  timerId23 =setTimeout(closeBox23, 5000 );
+  document.getElementById("btnShowBox23").disabled = true;
+}
+function closeBox23() {
+  document.getElementById("temporaryBox23").style.display = "none";
+  clearTimeout(timerId23);
+  document.getElementById("btnShowBox23").disabled = false;
+}
+
+$(function(){
+  $('#js-target23').t({
+    speed_vary:true,
+  });
+});
+
+// Q24
+function showBox24() {
+  document.getElementById("temporaryBox24").style.display = "block";
+  timerId24 =setTimeout(closeBox24, 5000 );
+  document.getElementById("btnShowBox24").disabled = true;
+}
+function closeBox24() {
+  document.getElementById("temporaryBox24").style.display = "none";
+  clearTimeout(timerId24);
+  document.getElementById("btnShowBox24").disabled = false;
+}
+
+$(function(){
+  $('#js-target24').t({
+    speed_vary:true,
+  });
+});
+
+// Q25
+function showBox25() {
+  document.getElementById("temporaryBox25").style.display = "block";
+  timerId25 =setTimeout(closeBox25, 5000 );
+  document.getElementById("btnShowBox25").disabled = true;
+}
+function closeBox25() {
+  document.getElementById("temporaryBox25").style.display = "none";
+  clearTimeout(timerId25);
+  document.getElementById("btnShowBox25").disabled = false;
+}
+
+$(function(){
+  $('#js-target25').t({
+    speed_vary:true,
+  });
+});
+
+// Q26
+function showBox26() {
+  document.getElementById("temporaryBox26").style.display = "block";
+  timerId26 =setTimeout(closeBox26, 5000 );
+  document.getElementById("btnShowBox26").disabled = true;
+}
+function closeBox26() {
+  document.getElementById("temporaryBox26").style.display = "none";
+  clearTimeout(timerId26);
+  document.getElementById("btnShowBox26").disabled = false;
+}
+
+$(function(){
+  $('#js-target26').t({
+    speed_vary:true,
+  });
+});

@@ -645,6 +645,98 @@
       <input type="button" value="答えを見る" id="btnShowBox21" class="btn" onclick="showBox21();">
     </p>
   </section>
+    
+    <!-- Q22 -->
+  <section>
+    <h3>Q22) テーブルにデータを挿入したい場合、<br>
+      何と入力すれば良いか</h3>
+    <h4 id="temporaryBox22" class="temporaryBox">
+      <pre class="lang-sql linenums" id="js-target22">
+        正解は、
+        insert into テーブル名 values('データ1','データ2',,,,,);
+
+
+
+
+        具体例
+        insert into tb1 values('A101','佐藤',40);
+        insert into tb1 values('A102','高橋',28);
+        insert into tb1 values('A103','中川',20);
+      </pre>
+    </h4>
+    <p>
+      <input type="button" value="答えを見る" id="btnShowBox22" class="btn" onclick="showBox22();">
+    </p>
+  </section>
+
+  <!-- Q23 -->
+  <section>
+    <h3>Q23) 自分のIPアドレスを調べたい場合、<br>
+      何と入力すれば良いか</h3>
+    <h4 id="temporaryBox23" class="temporaryBox">
+      <pre class="lang-sql linenums" id="js-target23">
+        正解は、
+        ipconfig /all
+      </pre>
+    </h4>
+    <p>
+      <input type="button" value="答えを見る" id="btnShowBox23" class="btn" onclick="showBox23();">
+    </p>
+  </section>
+
+  <!-- Q24 -->
+  <section>
+    <h3>Q24) 自分のIPアドレスが機能しているか調べたい場合、<br>
+      何と入力すれば良いか</h3>
+    <h4 id="temporaryBox24" class="temporaryBox">
+      <pre class="lang-sql linenums" id="js-target24">
+        正解は、
+        ping 192.168.1.11
+
+        例）	※「11」は自分の固有値
+      </pre>
+    </h4>
+    <p>
+      <input type="button" value="答えを見る" id="btnShowBox24" class="btn" onclick="showBox24();">
+    </p>
+  </section>
+
+  <!-- Q25 -->
+  <section>
+    <h3>Q25) Fドライブに移動して、MySQLを起動したい場合、<br>
+      何と入力すれば良いか</h3>
+    <h4 id="temporaryBox25" class="temporaryBox">
+      <pre class="lang-sql linenums" id="js-target25">
+        正解は、
+        cd /d f:\xampp\mysql\bin
+
+        mysql -u root -p
+      </pre>
+    </h4>
+    <p>
+      <input type="button" value="答えを見る" id="btnShowBox25" class="btn" onclick="showBox25();">
+    </p>
+  </section>
+
+  <!-- Q26 -->
+  <section>
+    <h3>Q26) レコードを全削除したい場合、<br>
+      何と入力すれば良いか</h3>
+    <h4 id="temporaryBox26" class="temporaryBox">
+      <pre class="lang-sql linenums" id="js-target26">
+        正解は、
+        delete from テーブル名;
+
+
+        具体例
+        MariaDB [db1]> delete from tb1h;
+        Query OK, 5 rows affected (0.096 sec)
+      </pre>
+    </h4>
+    <p>
+      <input type="button" value="答えを見る" id="btnShowBox26" class="btn" onclick="showBox26();">
+    </p>
+  </section>
 
     <!-- Javascript -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
