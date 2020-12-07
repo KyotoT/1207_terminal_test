@@ -164,3 +164,117 @@ $(function(){
     speed_vary:true,
   });
 });
+
+// Q9
+// ボックスを表示して、タイマーを開始
+function showBox9() {
+  document.getElementById("temporaryBox9").style.display = "block"; // ボックスを表示
+  timerId9=setTimeout(closeBox9, 5000 ); // タイマーを開始
+  document.getElementById("btnShowBox9").disabled = true; // 表示用ボタンを無効化
+}
+// ボックスを消して、タイマーを終了
+function closeBox9() {
+  document.getElementById("temporaryBox9").style.display = "none"; // ボックスを消す
+  clearTimeout(timerId9); // タイマーを終了
+  document.getElementById("btnShowBox9").disabled = false; // 表示用ボタンを有効化
+}
+
+$(function(){
+  $('#js-target9').t({
+    speed_vary:true,
+  });
+});
+
+// Q10
+// ボックスを表示して、タイマーを開始
+function showBox10() {
+  document.getElementById("temporaryBox10").style.display = "block"; // ボックスを表示
+  timerId10 =setTimeout(closeBox10, 5000 ); // タイマーを開始
+  document.getElementById("btnShowBox10").disabled = true; // 表示用ボタンを無効化
+}
+// ボックスを消して、タイマーを終了
+function closeBox10() {
+  document.getElementById("temporaryBox10").style.display = "none"; // ボックスを消す
+  clearTimeout(timerId10); // タイマーを終了
+  document.getElementById("btnShowBox10").disabled = false; // 表示用ボタンを有効化
+}
+
+$(function(){
+  $('#js-target10').t({
+    speed_vary:true,
+  });
+});
+
+// Q11
+// ボックスを表示して、タイマーを開始
+function showBox11() {
+  document.getElementById("temporaryBox11").style.display = "block"; // ボックスを表示
+  timerId11 =setTimeout(closeBox11, 5000 ); // タイマーを開始
+  document.getElementById("btnShowBox11").disabled = true; // 表示用ボタンを無効化
+}
+// ボックスを消して、タイマーを終了
+function closeBox11() {
+  document.getElementById("temporaryBox11").style.display = "none"; // ボックスを消す
+  clearTimeout(timerId11); // タイマーを終了
+  document.getElementById("btnShowBox11").disabled = false; // 表示用ボタンを有効化
+}
+
+$(function(){
+  $('#js-target11').t({
+    speed_vary:true,
+  });
+});
+
+// Q12
+function showBox12() {
+  document.getElementById("temporaryBox12").style.display = "block";
+  timerId12 =setTimeout(closeBox12, 5000 );
+  document.getElementById("btnShowBox12").disabled = true;
+}
+function closeBox12() {
+  document.getElementById("temporaryBox12").style.display = "none";
+  clearTimeout(timerId12);
+  document.getElementById("btnShowBox12").disabled = false;
+}
+
+$(function(){
+  $('#js-target12').t({
+    speed_vary:true,
+  });
+});
+
+// Q13
+function showBox13() {
+  document.getElementById("temporaryBox13").style.display = "block";
+  timerId13 =setTimeout(closeBox13, 5000 );
+  document.getElementById("btnShowBox13").disabled = true;
+}
+function closeBox13() {
+  document.getElementById("temporaryBox13").style.display = "none";
+  clearTimeout(timerId13);
+  document.getElementById("btnShowBox13").disabled = false;
+}
+
+$(function(){
+  $('#js-target13').t({
+    speed_vary:true,
+  });
+});
+
+// Q14
+function showBox14() {
+  document.getElementById("temporaryBox14").style.display = "block";
+  timerId13 =setTimeout(closeBox14, 5000 );
+  document.getElementById("btnShowBox14").disabled = true;
+}
+function closeBox14() {
+  document.getElementById("temporaryBox14").style.display = "none";
+  clearTimeout(timerId14);
+  document.getElementById("btnShowBox14").disabled = false;
+}
+
+$(function(){
+  $('#js-target14').t({
+    speed_vary:true,
+  });
+});
